@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { BsDropdownModule } from 'ngx-bootstrap';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { SortablejsModule } from 'ngx-sortablejs';
 import { AppComponent } from './app.component';
 import { ExamplesModule } from './examples/examples.module';
@@ -40,15 +40,13 @@ import { TestCasesModule } from './test-cases/test-cases.module';
         path: 'tests/cross-components-multiple-list',
         component: CrossComponentsMultipleListsComponent,
     },
-], { relativeLinkResolution: 'legacy' }),
+]),
 
     // global settings
     SortablejsModule.forRoot({
       animation: 200,
     }),
-
-    BsDropdownModule.forRoot(),
-
+    BsDropdownModule,
     ExamplesModule,
     TestCasesModule,
   ],

@@ -1,5 +1,5 @@
 {
-  "name": "ngx-sortablejs",
+  "name": "@maksim_m/ngx-sortablejs",
   "keywords": [
     "ngx-sortablejs",
     "angular-sortablejs",
@@ -8,18 +8,18 @@
     "sortable",
     "draggable"
   ],
-  "author": "smnbbrv",
+  "author": "maksim_m",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sortablejs/ngx-sortablejs"
+    "url": "https://github.com/mrphelko/ngx-sortablejs"
   },
   "publishConfig": {
     "access": "public"
   },
   "peerDependencies": {
-    "@angular/common": "^11.0.0",
-    "@angular/core": "^11.0.0",
+    "@angular/common": "^14.0.0",
+    "@angular/core": "^14.0.0",
     "sortablejs": ">=1.7.0"
   },
   "main": "src/public-api.ts"

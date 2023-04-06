@@ -1,8 +1,10 @@
-# ngx-sortablejs
+# @maksim_m/ngx-sortablejs
 
 This package is an Angular 2+ binding for [Sortable.js](https://github.com/RubaXa/Sortable). Supports standard arrays and Angular `FormArray`.
 
 Previously known as angular-sortablejs.
+
+THIS IS FORK OF ngx-sortablejs(https://sortablejs.github.io/ngx-sortablejs) upped to angular 14
 
 ## Demo
 
@@ -13,7 +15,7 @@ Trees are also supported: [tree with fake root element (\*ngFor once, root can a
 ## Installation
 
 ```sh
-npm i -S ngx-sortablejs sortablejs
+npm i -S @maksim_m/ngx-sortablejs sortablejs
 npm i -D @types/sortablejs
 ```
 
@@ -133,7 +135,7 @@ The only thing which should be done is assigning the `group` option to the both 
 
 ```typescript
 import { Component } from '@angular/core';
-import { SortablejsOptions } from 'ngx-sortablejs';
+import { SortablejsOptions } from '@maksim_m/ngx-sortablejs';
 
 @Component({
     selector: 'my-app',
@@ -161,13 +163,13 @@ export class AppComponent {
 
 ### Drag & drop between two lists: clone mode
 
-The clone mode is similar to the one above (of course the proper Sortablejs settings should be used; see demo). The only important thing is that the `ngx-sortablejs` does clone the HTML element but **does not clone the variable** (or `FormControl` in case of `FormArray` input). By default the variable will be taken as is: a primitive will be copied, an object will be referenced.
+The clone mode is similar to the one above (of course the proper Sortablejs settings should be used; see demo). The only important thing is that the `@maksim_m/ngx-sortablejs` does clone the HTML element but **does not clone the variable** (or `FormControl` in case of `FormArray` input). By default the variable will be taken as is: a primitive will be copied, an object will be referenced.
 
 If you want to clone the item being sorted in a different manner, you can provide `sortablejsCloneFunction` as a parameter. This function receives an item and should return a clone of that item.
 
 ```typescript
 import { Component } from '@angular/core';
-import { SortablejsOptions } from 'ngx-sortablejs';
+import { SortablejsOptions } from '@maksim_m/ngx-sortablejs';
 
 @Component({
     selector: 'my-app',
